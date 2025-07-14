@@ -1,0 +1,82 @@
+<template>
+    <img src={imageUrl} alt="My Image">
+    <!--<lightning-card class="pmh-header" title="Quote Details">
+        <div class="slds-p-horizontal_medium slds-p-vertical_small">
+            <p><b>Quote Name:</b> {quoteName}</p>
+            <p><b>Account:</b> {accountName}</p>
+            <p><b>Status:</b> {status}</p>
+        </div>
+    </lightning-card>-->
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Deal Pricing">
+            <c-scenario-section scenario-name={scenarioName} record-id={recordId} scenario-options={scenarioOptions}></c-scenario-section>
+            <div class="slds-p-around_medium">
+                <template if:true={scenarioLineItems.length}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={scenarioLineItems}
+                        columns={scenarioLineColumns}
+                        hide-checkbox-column>
+                    ></lightning-datatable>
+                </template>
+                <template if:true={scenarioLineError}>
+                    <div class="slds-text-color_error">{scenarioLineError}</div>
+                </template>
+                <template if:false={scenarioLineItems.length}>
+                    <div>No scenario line items found.</div>
+                </template>
+            </div>
+        </lightning-tab>
+        <lightning-tab label="Communication">
+            <div class="slds-p-around_medium">
+                <div class="slds-m-bottom_small">
+                    <lightning-button-icon icon-name="utility:refresh" alternative-text="Refresh" title="Refresh" onclick={handleRefresh} class="slds-m-right_small"></lightning-button-icon>
+                </div>
+                <template if:true={communicationRecords.length}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={communicationRecords}
+                        columns={commColumns}
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                </template>
+                <template if:true={commError}>
+                    <div class="slds-text-color_error">{commError}</div>
+                </template>
+                <template if:false={communicationRecords.length}>
+                    <div>No communication records found.</div>
+                </template>
+            </div>
+        </lightning-tab>
+        <lightning-tab label="Cost">
+            <div class="slds-p-around_medium">Cost content goes here.</div>
+        </lightning-tab>
+        <lightning-tab show-error-indicator = {isAdhocPending} label="Adhoc">
+            <div class="slds-p-around_medium">
+                <template if:true={adhocApprovalHistory.length}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={adhocApprovalHistory}
+                        columns={adhocApprovalColumns}
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                </template>
+                <template if:true={adhocApprovalError}>
+                    <div class="slds-text-color_error">{adhocApprovalError}</div>
+                </template>
+                <template if:false={adhocApprovalHistory.length}>
+                    <div>No Adhoc approval history found.</div>
+                </template>
+            </div>
+        </lightning-tab>
+        <lightning-tab label="Price Authorization History">
+            <div class="slds-p-around_medium">Price Authorization History content goes here.</div>
+        </lightning-tab>
+        <lightning-tab label="Agreements">
+            <div class="slds-p-around_medium">Agreements content goes here.</div>
+        </lightning-tab>
+        <lightning-tab label="T &amp; C">
+            <div class="slds-p-around_medium">T &amp; C content goes here.</div>
+        </lightning-tab>
+    </lightning-tabset>
+</template>
