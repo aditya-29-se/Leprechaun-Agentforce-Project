@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action will be getting the previous authorization details for a given spd rev number for a Quote. This Action helps user to identify the previous Authorization details for a Quote and that will give insight for the user on how to authorize the current Quote. This Action will fetch the SPD Rev Level record and display the details. Some phrases which can be used to execute this actions are &quot;Previous Authorized Price&quot; , &quot;Last Authorization details&quot;</description>
+    <invocationTarget>Quote_Auth_Summary_Flow</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Quote Auth Summary Flow</masterLabel>
+</GenAiFunction>

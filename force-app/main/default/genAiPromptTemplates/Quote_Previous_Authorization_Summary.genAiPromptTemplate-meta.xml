@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Quote_Previous_Authorization_Summary</developerName>
+    <masterLabel>Quote Previous Authorization Summary</masterLabel>
+    <relatedEntity>SPD_REV_Level__c</relatedEntity>
+    <templateVersions>
+        <content>Get the QuoteId from Input
+Use the Spd Rev Number from User input
+Get the SPD_REV_Level__c record using QuoteId and Spd Rev Number
+
+Show Summary as below
+Requested Price : {!$Input:SPD_REV_Level__c.Total_Requested__c}
+Authorized Price : {!$Input:SPD_REV_Level__c.Total_Authorized__c}
+Authorized Date : {!$Input:SPD_REV_Level__c.spd_auth_dt__c}
+SPD Rev Number : {!$Input:SPD_REV_Level__c.spd_rev_num__c}
+Authorized By : {!$Input:SPD_REV_Level__c.Price_Authorizer__r.Name}
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://SPD_REV_Level__c</definition>
+            <referenceName>Input:SPD_REV_Level__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>Get the QuoteId from Input
+Use the Spd Rev Number from User input
+Get the SPD_REV_Level__c record using QuoteId and Spd Rev Number where spd_auth_dt__c not null.
+
+If record found, Show Summary as below
+Requested Price : {!$Input:SPD_REV_Level__c.Total_Requested__c}
+Authorized Price : {!$Input:SPD_REV_Level__c.Total_Authorized__c}
+Authorized Date : {!$Input:SPD_REV_Level__c.spd_auth_dt__c}
+SPD Rev Number : {!$Input:SPD_REV_Level__c.spd_rev_num__c}
+Authorized By : {!$Input:SPD_REV_Level__c.Price_Authorizer__r.Name}
+
+If No Record found, Show below text
+Sorry, No previous authorization found for this SPD Rev Number.
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://SPD_REV_Level__c</definition>
+            <referenceName>Input:SPD_REV_Level__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>Get the &apos;{QuoteId}&apos; from Input
+Use the &apos;{SpdRevNumber}&apos; from User input
+Get the SPD_REV_Level__c record using &apos;{QuoteId}&apos; and &apos;{SpdRevNumber}&apos; where spd_auth_dt__c not null. 
+
+If record found, Show Summary as below
+Requested Price : {!$Input:SPD_REV_Level__c.Total_Requested__c}
+Authorized Price : {!$Input:SPD_REV_Level__c.Total_Authorized__c}
+Authorized Date : {!$Input:SPD_REV_Level__c.spd_auth_dt__c}
+SPD Rev Number : {!$Input:SPD_REV_Level__c.spd_rev_num__c}
+Authorized By : {!$Input:SPD_REV_Level__c.Price_Authorizer__r.Name}
+
+If No Record found, Show below text
+Sorry, No previous authorization found for this SPD Rev Number.
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://SPD_REV_Level__c</definition>
+            <referenceName>Input:SPD_REV_Level__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>Get the {{QuoteId}} from Input
+Use the &apos;{SpdRevNumber}&apos; from User input
+Get the SPD_REV_Level__c record using &apos;{QuoteId}&apos; and &apos;{SpdRevNumber}&apos; where spd_auth_dt__c not null. 
+
+If record found, Show Summary as below
+Requested Price : {!$Input:SPD_REV_Level__c.Total_Requested__c}
+Authorized Price : {!$Input:SPD_REV_Level__c.Total_Authorized__c}
+Authorized Date : {!$Input:SPD_REV_Level__c.spd_auth_dt__c}
+SPD Rev Number : {!$Input:SPD_REV_Level__c.spd_rev_num__c}
+Authorized By : {!$Input:SPD_REV_Level__c.Price_Authorizer__r.Name}
+
+If No Record found, Show below text
+Sorry, No previous authorization found for this SPD Rev Number.
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://SPD_REV_Level__c</definition>
+            <referenceName>Input:SPD_REV_Level__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>Get the {QuoteId} from Input 
+Use the &apos;{SpdRevNumber}&apos; from User input
+Get the SPD_REV_Level__c record using &apos;{QuoteId}&apos; and &apos;{SpdRevNumber}&apos; where spd_auth_dt__c not null. 
+
+If record found, Show Summary as below
+Requested Price : {!$Input:SPD_REV_Level__c.Total_Requested__c}
+Authorized Price : {!$Input:SPD_REV_Level__c.Total_Authorized__c}
+Authorized Date : {!$Input:SPD_REV_Level__c.spd_auth_dt__c}
+SPD Rev Number : {!$Input:SPD_REV_Level__c.spd_rev_num__c}
+Authorized By : {!$Input:SPD_REV_Level__c.Price_Authorizer__r.Name}
+
+If No Record found, Show below text
+Sorry, No previous authorization found for this SPD Rev Number.
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://SPD_REV_Level__c</definition>
+            <referenceName>Input:SPD_REV_Level__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

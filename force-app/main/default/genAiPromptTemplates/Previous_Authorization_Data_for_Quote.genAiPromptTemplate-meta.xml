@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Previous_Authorization_Data_for_Quote</developerName>
+    <masterLabel>Previous Authorization Data for Quote</masterLabel>
+    <relatedEntity>Quote__c</relatedEntity>
+    <templateVersions>
+        <content>If the question is about the previous authorization of Quote, then Create a summary of {!$RelatedList:Quote__c.SPD_REV_Levels__r.Records} where spd_auth_dt__c is not null
+If there are multiple records found, ask the user what is the SPD Rev Number to be considered to summarize the details.
+Use the User entered SPD Rev Number to filter the {!$RelatedList:Quote__c.SPD_REV_Levels__r.Records} records with field spd_rev_num__c
+Once the record is retrieved, Provide a detailed summary of the record with bullet points.
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Quote__c</definition>
+            <referenceName>Input:Quote__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Quote__c.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>SPD_REV_Levels__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Quote__c.SPD_REV_Levels__r.Records</referenceName>
+        </templateDataProviders>
+    </templateVersions>
+    <templateVersions>
+        <content>If the question is about the previous authorization of Quote, then Create a summary of {!$RelatedList:Quote__c.SPD_REV_Levels__r.Records} where spd_auth_dt__c is not null
+If there are multiple records found, ask the user what is the SPD Rev Number to be considered to summarize the details.
+Use the User entered SPD Rev Number to filter the {!$RelatedList:Quote__c.SPD_REV_Levels__r.Records} records with field spd_rev_num__c
+Once the record is retrieved, Show the Name of SPD_Rev_Level__c record
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Quote__c</definition>
+            <referenceName>Input:Quote__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Quote__c.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>SPD_REV_Levels__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Quote__c.SPD_REV_Levels__r.Records</referenceName>
+        </templateDataProviders>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

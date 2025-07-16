@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Quotes_Validation</fullName>
+    <columns>Created_Date__c</columns>
+    <columns>Opportunity_Name__c</columns>
+    <columns>Quote_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>QuoteSubStatus__c</columns>
+    <columns>Project_Type__c</columns>
+    <columns>Project_Code__c</columns>
+    <columns>Bill_To_Name__c</columns>
+    <columns>Bill_To_Account_Number__c</columns>
+    <columns>Quote_To_Account__c</columns>
+    <columns>Distributor_Location__c</columns>
+    <columns>QuotePreparedBy__c</columns>
+    <columns>Submit_Date__c</columns>
+    <columns>Price_Authorizer_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Quote__c.External</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Closed</value>
+    </filters>
+    <label>External Quotes - Validation</label>
+</ListView>

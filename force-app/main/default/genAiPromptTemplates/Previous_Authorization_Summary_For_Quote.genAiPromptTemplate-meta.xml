@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Previous_Authorization_Summary_For_Quote</developerName>
+    <masterLabel>Previous Authorization Summary For Quote</masterLabel>
+    <templateVersions>
+        <content>Get the Quote__c record where Quote_Id__c is {!$Input:QuoteId.Id} 
+
+If record found, Show Summary as below
+Requested Price : The result Quote__c.Name
+Authorized Price :
+Authorized Date : 
+SPD Rev Number : 
+Authorized By :
+
+If No Record found, Show below text
+Sorry, No previous authorization found for this SPD Rev Number.
+</content>
+        <inputs>
+            <apiName>SpdRev</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>SpdRev</masterLabel>
+            <referenceName>Input:SpdRev</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>QuoteId</apiName>
+            <definition>SOBJECT://Quote__c</definition>
+            <masterLabel>QuoteId</masterLabel>
+            <referenceName>Input:QuoteId</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

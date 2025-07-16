@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProsTransactionType__c</fullName>
+    <description>PROS Transaction Type required for guidance call</description>
+    <externalId>false</externalId>
+    <formula>CASE(1,  
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 0,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 4999.99), 1, 0) , &quot;BB_SS&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 5000,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 30000), 1, 0) , &quot;BB_XS&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 30000.01,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 100000), 1, 0) , &quot;BB_S&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 100000.01,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 400000), 1, 0) , &quot;BB_M&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 400000.01,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 600000), 1, 0) , &quot;BB_ML&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 600000.01,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 1000000), 1, 0) , &quot;BB_L&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 1000000.01,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 2000000), 1, 0) , &quot;BB_LL&quot;,
+IF( AND(MDL_Extended_Normal_Net_Price_Summary__c &gt;= 2000000.01,MDL_Extended_Normal_Net_Price_Summary__c &lt;= 6000000), 1, 0) , &quot;BB_XL&quot;,
+IF( MDL_Extended_Normal_Net_Price_Summary__c &gt;= 6000000.01, 1, 0) , &quot;BB_XX&quot;,
+&quot;BB_X&quot;)</formula>
+    <label>PROS Transaction Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

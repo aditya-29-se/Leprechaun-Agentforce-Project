@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Previous_Authorization_Details_for_Quote</developerName>
+    <masterLabel>Previous Authorization Details for Quote</masterLabel>
+    <templateVersions>
+        <content>Hi {!$User.Name},
+
+</content>
+        <inputs>
+            <apiName>QuoteId</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>QuoteId</masterLabel>
+            <referenceName>Input:QuoteId</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>SpdRev</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>SpdRev</masterLabel>
+            <referenceName>Input:SpdRev</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

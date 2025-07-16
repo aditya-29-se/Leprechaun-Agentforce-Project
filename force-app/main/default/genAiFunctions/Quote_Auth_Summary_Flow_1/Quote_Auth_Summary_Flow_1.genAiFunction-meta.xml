@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Action will get executed when user asks for the previous authorization details of a Quote along with the SPD Rev Number</description>
+    <invocationTarget>Quote_Auth_Summary_Flow</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Quote Auth Summary Flow</masterLabel>
+</GenAiFunction>

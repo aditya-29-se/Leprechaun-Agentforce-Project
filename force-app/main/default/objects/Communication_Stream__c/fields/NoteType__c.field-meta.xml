@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoteType__c</fullName>
+    <description>project-related note, more visibility and accountability for project managers</description>
+    <label>Note Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PM Note</fullName>
+                <default>false</default>
+                <label>PM Note</label>
+            </value>
+            <value>
+                <fullName>Aged Note</fullName>
+                <default>false</default>
+                <label>Aged Note</label>
+            </value>
+            <value>
+                <fullName>Drawing Note</fullName>
+                <default>false</default>
+                <label>Drawing Note</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

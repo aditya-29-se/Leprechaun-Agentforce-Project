@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action should execute when user asks for previous authorization price details for a Quote and spd rev number</description>
+    <invocationTarget>Previous_Authorization_Summary_For_Quote</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Previous Authorization Summary For Quote</masterLabel>
+</GenAiFunction>

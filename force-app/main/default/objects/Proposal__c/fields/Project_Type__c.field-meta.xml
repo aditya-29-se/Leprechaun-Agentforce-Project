@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Type__c</fullName>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Close</fullName>
+                <default>false</default>
+                <label>Close</label>
+            </value>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Amusement</fullName>
+                <default>false</default>
+                <label>Amusement</label>
+            </value>
+            <value>
+                <fullName>Data Centers/Telecom</fullName>
+                <default>false</default>
+                <label>Data Centers/Telecom</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Electric Generation-Central</fullName>
+                <default>false</default>
+                <label>Electric Generation-Central</label>
+            </value>
+            <value>
+                <fullName>Electric Generation-Distributed</fullName>
+                <default>false</default>
+                <label>Electric Generation-Distributed</label>
+            </value>
+            <value>
+                <fullName>Electric Transmission &amp; Dist.</fullName>
+                <default>false</default>
+                <label>Electric Transmission &amp; Dist.</label>
+            </value>
+            <value>
+                <fullName>Hotel/Motel</fullName>
+                <default>false</default>
+                <label>Hotel/Motel</label>
+            </value>
+            <value>
+                <fullName>Industrial- Building</fullName>
+                <default>false</default>
+                <label>Industrial- Building</label>
+            </value>
+            <value>
+                <fullName>Industrial- Food &amp; Beverage</fullName>
+                <default>false</default>
+                <label>Industrial- Food &amp; Beverage</label>
+            </value>
+            <value>
+                <fullName>Industrial- Infrastructure</fullName>
+                <default>false</default>
+                <label>Industrial- Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Industrial- OEM/Machine</fullName>
+                <default>false</default>
+                <label>Industrial- OEM/Machine</label>
+            </value>
+            <value>
+                <fullName>Industrial- Process &amp; Control Other</fullName>
+                <default>false</default>
+                <label>Industrial- Process &amp; Control Other</label>
+            </value>
+            <value>
+                <fullName>Industrial- Retail Logistics</fullName>
+                <default>false</default>
+                <label>Industrial- Retail Logistics</label>
+            </value>
+            <value>
+                <fullName>Jails &amp; Prisons</fullName>
+                <default>false</default>
+                <label>Jails &amp; Prisons</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Metals - Mfg/Production/Processing</fullName>
+                <default>false</default>
+                <label>Metals - Mfg/Production/Processing</label>
+            </value>
+            <value>
+                <fullName>Minerals - Cement/Glass</fullName>
+                <default>false</default>
+                <label>Minerals - Cement/Glass</label>
+            </value>
+            <value>
+                <fullName>Mining</fullName>
+                <default>false</default>
+                <label>Mining</label>
+            </value>
+            <value>
+                <fullName>Nuclear</fullName>
+                <default>false</default>
+                <label>Nuclear</label>
+            </value>
+            <value>
+                <fullName>Offices &amp; Banks</fullName>
+                <default>false</default>
+                <label>Offices &amp; Banks</label>
+            </value>
+            <value>
+                <fullName>Oil&amp;Gas</fullName>
+                <default>false</default>
+                <label>Oil&amp;Gas</label>
+            </value>
+            <value>
+                <fullName>R &amp; D/Laboratories</fullName>
+                <default>false</default>
+                <label>R &amp; D/Laboratories</label>
+            </value>
+            <value>
+                <fullName>Religious</fullName>
+                <default>false</default>
+                <label>Religious</label>
+            </value>
+            <value>
+                <fullName>Resi-Apt/Condo 2, 3, 4 Units</fullName>
+                <default>false</default>
+                <label>Resi-Apt/Condo 2, 3, 4 Units</label>
+            </value>
+            <value>
+                <fullName>Resi-Apt/Condo 5+ Units</fullName>
+                <default>false</default>
+                <label>Resi-Apt/Condo 5+ Units</label>
+            </value>
+            <value>
+                <fullName>Resi-Combo Retail + Apt/Condo</fullName>
+                <default>false</default>
+                <label>Resi-Combo Retail + Apt/Condo</label>
+            </value>
+            <value>
+                <fullName>Resi-High Rise Apt/Condo</fullName>
+                <default>false</default>
+                <label>Resi-High Rise Apt/Condo</label>
+            </value>
+            <value>
+                <fullName>Resi-Single Family</fullName>
+                <default>false</default>
+                <label>Resi-Single Family</label>
+            </value>
+            <value>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+                <label>Restaurants</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Transportation-Building</fullName>
+                <default>false</default>
+                <label>Transportation-Building</label>
+            </value>
+            <value>
+                <fullName>Transportation-Infrastructure</fullName>
+                <default>false</default>
+                <label>Transportation-Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+            <value>
+                <fullName>Water/Waste Water</fullName>
+                <default>false</default>
+                <label>Water/Waste Water</label>
+            </value>
+            <value>
+                <fullName>Value1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Value1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RevisionHistory__c</fullName>
+    <externalId>false</externalId>
+    <formula>&apos;Rev: &apos; + TEXT(SPD_Rev__c) + &apos; &apos; +
+    IF(
+        OR(
+            SPD_Rev__c &gt; 0,
+            AND(
+                SPD_Rev__c = 0,
+                OR(ISPICKVAL(Status__c, &apos;Authorized&apos;),ISPICKVAL(Status__c, &apos;Finalized&apos;),ISPICKVAL(Status__c, &apos;Acknowledged&apos;),ISPICKVAL(Status__c, &apos;Not Authorized&apos;))
+            )
+        ),
+        HYPERLINK(&apos;/lightning/cmp/c__spaRequestHistoryConsoleView?c__recordId=&apos; &amp; Id , &apos;Click Here&apos;, &apos;_blank&apos;),
+        &apos;&apos;
+    )</formula>
+    <label>Revision History</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

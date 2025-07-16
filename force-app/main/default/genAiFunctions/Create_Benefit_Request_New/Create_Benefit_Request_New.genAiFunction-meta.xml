@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this action to create Benefit Request only.
+Always ask for required inputs like Agreement Number in a html form html form of input box &amp; submit button to fill it. It will be difficult for user to type all inputs</description>
+    <invocationTarget>BenefitRequestController</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>true</isConfirmationRequired>
+    <masterLabel>Create Benefit Request New</masterLabel>
+</GenAiFunction>

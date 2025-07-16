@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArchiveDistributorProjectManager__c</fullName>
+    <description>Stores Distributor_Project_Manager__c reference Id which is used for Archiving Activity</description>
+    <externalId>false</externalId>
+    <label>Archive Distributor Project Manager</label>
+    <length>18</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

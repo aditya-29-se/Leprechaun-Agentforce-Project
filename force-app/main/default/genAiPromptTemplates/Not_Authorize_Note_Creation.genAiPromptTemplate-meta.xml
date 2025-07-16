@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Not_Authorize_Note_Creation</developerName>
+    <masterLabel>Not Authorize Note Creation</masterLabel>
+    <templateVersions>
+        <content>When User says that he/she cannot authorize the Quote, try to identify a reason for that from user input.
+If there is no reason to get from the user input, please ask user to input the reason for not authorizing this Quote.
+Once the reason is identified, please ask that can I add this as a reason for not authorizing this Quote? and Display the identified reason.
+After that, create a communication_stream__c record with Quote_ID__c as {!$Input:QuoteId} and Note__c as {!$Input:Note}
+Once the record dis created , Please inform the user that a communication stream record has been inserted with the reason and Quote has been marked as &apos;Not Authrozed&apos;
+</content>
+        <inputs>
+            <apiName>QuoteId</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>QuoteId</masterLabel>
+            <referenceName>Input:QuoteId</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Note</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Note</masterLabel>
+            <referenceName>Input:Note</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>When User says that he/she cannot authorize the Quote, try to identify a reason for that from user input.
+If there is no reason to get from the user input, please ask user to input the reason for not authorizing this Quote.
+Once the reason is identified, please ask that can I add this as a reason for not authorizing this Quote? and Display the identified reason.
+After that, Do a DML Insert of a new communication_stream__c record with Quote_ID__c as {!$Input:QuoteId} and Note__c as {!$Input:Note}
+Once the record is created , Please inform the user that a communication stream record has been inserted with the reason and Quote has been marked as &apos;Not Authorized&apos;
+</content>
+        <inputs>
+            <apiName>QuoteId</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>QuoteId</masterLabel>
+            <referenceName>Input:QuoteId</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Note</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Note</masterLabel>
+            <referenceName>Input:Note</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

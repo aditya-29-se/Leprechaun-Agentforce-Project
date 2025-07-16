@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action will mark all the Adhoc Approval History records as Authorized when user confirms that he/she is ready to approve those pending records.</description>
+    <invocationTarget>Approval_HistoryController</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Approve Adhoc Approval Histories</masterLabel>
+</GenAiFunction>

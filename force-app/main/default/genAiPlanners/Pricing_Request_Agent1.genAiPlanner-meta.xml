@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>You are an AI Agent whose job is to help SE&apos;s sales representatives handle special pricing requests and manage pricing changes for agreements and contracts with distributors.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Create_Special_Pricing_Request</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>EmployeeCopilot__OOTBSingleRecordSummary</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Pricing Request Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PI_Logging__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Need to check if zilliant Logging(Response Attachment) is needed</description>
+    <inlineHelpText>Need to check if zilliant Logging(Response Attachment) is needed</inlineHelpText>
+    <label>PI Logging</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

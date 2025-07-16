@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequestSapAgreementNumber__c</fullName>
+    <description>SAPE-9862 : Added this field re-request sap agreement number if the earlier request fails. This field will only be visible to the SEA support.</description>
+    <externalId>false</externalId>
+    <formula>If( isBlank(SapAgreementNumber__c), Hyperlink(&apos;/lightning/cmp/c__RequestSapAgreement?c__quoteId=&apos; &amp; Id, &apos;Click Here&apos;, &apos;_blank&apos;), &apos;SAP Agreement Number Already Exists.&apos;)</formula>
+    <inlineHelpText>Click here to request SAP Agreement Number (Support use only)*</inlineHelpText>
+    <label>Request Sap Agreement Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SumExtPurchProfilePriceRebate__c</fullName>
+    <description>Contain the Summation of the Quotations Extended Purchaser Profile Price for all lines marked for rebate</description>
+    <externalId>false</externalId>
+    <label>Sum of Ext Purch Profile Price Rebate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

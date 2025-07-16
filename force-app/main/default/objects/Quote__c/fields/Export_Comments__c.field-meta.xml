@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Export_Comments__c</fullName>
+    <description>These are notes that either the Project Manager or Export Compliance officer can create.</description>
+    <inlineHelpText>Comments created by either the project manager or the export compliance officer</inlineHelpText>
+    <label>Export Comments</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

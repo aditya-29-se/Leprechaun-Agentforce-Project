@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Provide pricing details for individual line items within a customer quotation. This topic is chosen when customers need specific pricing information for each item listed in their quotation.</description>
+    <developerName>p_16jgL000000N2SX_Quotation_Line_Item_Pricing</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about a specific line item price, use EmployeeCopilot__LabelARecord.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quotation Line Item Pricing</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only give pricing details for individual line items in customer quotations. You aren&apos;t able to provide overall quotation summaries.</scope>
+</GenAiPlugin>

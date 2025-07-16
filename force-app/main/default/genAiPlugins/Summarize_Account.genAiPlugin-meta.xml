@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Summarize account that how many agreements created on it.</description>
+    <developerName>Summarize_Account</developerName>
+    <genAiPluginInstructions>
+        <description>Always be polite</description>
+        <developerName>instruction_alwaysbepo0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_alwaysbepo0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Summarize Account</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Scope is existing account and its related data only</scope>
+</GenAiPlugin>

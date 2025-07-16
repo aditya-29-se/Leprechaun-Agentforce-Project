@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Size_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ExtendedBookPriceSummary__c  &gt; 0 &amp;&amp; ExtendedBookPriceSummary__c  &lt;=5000.00 &amp;&amp; Country_Code__c = &apos;US&apos; , &quot;A&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 0 &amp;&amp; ExtendedBookPriceSummary__c  &lt;=2000.00 &amp;&amp; Country_Code__c = &apos;CA&apos; , &quot;A&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 5000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 30000.00 &amp;&amp; Country_Code__c = &apos;US&apos;, &quot;B&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 2000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 5000.00 &amp;&amp; Country_Code__c = &apos;CA&apos;, &quot;B&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 30000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 100000.00 &amp;&amp; Country_Code__c = &apos;US&apos;, &quot;C&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 5000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 20000.00 &amp;&amp; Country_Code__c = &apos;CA&apos;, &quot;C&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 100000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 400000.00 &amp;&amp; Country_Code__c = &apos;US&apos;, &quot;D&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 20000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 40000.00 &amp;&amp; Country_Code__c = &apos;CA&apos;, &quot;D&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 400000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 600000.00 &amp;&amp; Country_Code__c = &apos;US&apos;, &quot;E&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 40000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 100000.00 &amp;&amp; Country_Code__c = &apos;CA&apos;, &quot;E&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 600000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 1000000.00 &amp;&amp; Country_Code__c = &apos;US&apos;, &quot;F&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 100000.00 &amp;&amp; ExtendedBookPriceSummary__c  &lt;= 500000.00 &amp;&amp; Country_Code__c = &apos;CA&apos;, &quot;F&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 1000000.00 &amp;&amp; Country_Code__c = &apos;US&apos;, &quot;G&quot;,
+IF(ExtendedBookPriceSummary__c  &gt; 500000.00 &amp;&amp; Country_Code__c = &apos;CA&apos;, &quot;G&quot;,&apos;&apos;
+))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Job Size</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

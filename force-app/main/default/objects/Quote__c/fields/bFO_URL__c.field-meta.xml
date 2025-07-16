@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bFO_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(ISBLANK(Deal_ID__c) , &apos;&apos; , 
+HYPERLINK( &quot;http://wvusstlpa083.nam.gad.schneider-electric.com:8080/dealmgt/cpq_login2.jsp?userid=zpsadmin&amp;password=password&amp;dealID=8a2d05045544356c01554a23045a04e0 &quot;, &quot;http://wvusstlpa083.nam.gad.schneider-electric.com:8080/dealmgt/cpq_login2.jsp?userid=zpsadmin&amp;password=password&amp;dealID=&quot;&amp;Deal_ID__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>bFO URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

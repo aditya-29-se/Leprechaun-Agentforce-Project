@@ -1,0 +1,21 @@
+{
+  "required" : [ "QuoteIdForFlow", "SPDRevNumberForFlow" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "QuoteIdForFlow" : {
+      "title" : "QuoteIdForFlow",
+      "description" : "Get the Quote Id from the current record context. This will be a 18 digit record id. If not available, ask user to provide",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "SPDRevNumberForFlow" : {
+      "title" : "SPDRevNumberForFlow",
+      "description" : "This is an integer value we need to get from the user.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

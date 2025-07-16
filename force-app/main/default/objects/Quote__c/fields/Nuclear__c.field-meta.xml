@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nuclear__c</fullName>
+    <label>Nuclear</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>US_Government_Classification__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>true</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Federal Govt- All Other</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Defense Contractor</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Air Force</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Army</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Navy/Marines</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Other</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Energy</controllingFieldValue>
+            <valueName>Yes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal Govt- All Other</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Defense Contractor</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Air Force</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Army</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Navy/Marines</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Defense- Other</controllingFieldValue>
+            <controllingFieldValue>Federal Govt- Dept of Energy</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

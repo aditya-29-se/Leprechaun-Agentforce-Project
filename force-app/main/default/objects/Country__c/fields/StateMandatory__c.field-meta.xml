@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StateMandatory__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, State will be required on Create Quote modal for External for Customer Search, if False Customer search will happen based on Sales Territory</description>
+    <label>State Mandatory</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

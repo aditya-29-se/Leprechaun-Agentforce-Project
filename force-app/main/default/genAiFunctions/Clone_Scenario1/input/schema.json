@@ -1,0 +1,21 @@
+{
+  "required" : [ "baseScenarioName", "newScenarioName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "baseScenarioName" : {
+      "title" : "baseScenarioName",
+      "description" : "This will be a user input. Agent will be asking user to select a base scenario from a list of scenarios. When user selects a base scenario by entering the number. That specific name__c of PI_Scenario__c should be used as this input value.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "newScenarioName" : {
+      "title" : "newScenarioName",
+      "description" : "The name of new scenario. This will be provided by user as a result of a previous Action. Use that value.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

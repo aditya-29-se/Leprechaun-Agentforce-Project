@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incoterms_Code__c</fullName>
+    <label>Incoterms Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CFR</fullName>
+                <default>false</default>
+                <label>CFR – Cost and Freight (named port of destination)</label>
+            </value>
+            <value>
+                <fullName>CIF</fullName>
+                <default>false</default>
+                <label>CIF – Cost, Insurance and Freight (named port of destination)</label>
+            </value>
+            <value>
+                <fullName>CIP</fullName>
+                <default>false</default>
+                <label>CIP – Carriage and Insurance Paid to (named place)</label>
+            </value>
+            <value>
+                <fullName>CPT</fullName>
+                <default>false</default>
+                <label>CPT – Carriage Paid to (named place)</label>
+            </value>
+            <value>
+                <fullName>DAP</fullName>
+                <default>false</default>
+                <label>DAP – Delivered at Place (named place of destination)</label>
+            </value>
+            <value>
+                <fullName>DAT</fullName>
+                <default>false</default>
+                <label>DAT – Delivered at Terminal (named place of destination)</label>
+            </value>
+            <value>
+                <fullName>DDP</fullName>
+                <default>false</default>
+                <label>DDP – Delivered Duty Paid (named place of destination)</label>
+            </value>
+            <value>
+                <fullName>EXW</fullName>
+                <default>false</default>
+                <label>EXW – EX-Works (named place)</label>
+            </value>
+            <value>
+                <fullName>FAS</fullName>
+                <default>false</default>
+                <label>FAS – Free Alongside Ship (named port of shipment)</label>
+            </value>
+            <value>
+                <fullName>FCA</fullName>
+                <default>false</default>
+                <label>FCA – Free Carrier (named place)</label>
+            </value>
+            <value>
+                <fullName>FOB</fullName>
+                <default>false</default>
+                <label>FOB – Free On Board (named port of shipment)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

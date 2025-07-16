@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Action will fetch the previous authorized price details of a Line using the user input as the lineitemnumber and spdrev. This needs to be executed when user asks about a previous authorization scenario for a Line. If line is not specified , then do not consider this action. If Line number or SpdRev is not provided by User, ask for those</description>
+    <invocationTarget>CommunicationStreamController</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Get Line Previous Value</masterLabel>
+</GenAiFunction>

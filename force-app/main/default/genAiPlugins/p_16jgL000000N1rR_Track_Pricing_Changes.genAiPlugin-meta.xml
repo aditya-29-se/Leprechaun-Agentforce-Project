@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Monitor updates to pricing agreements and contracts. This topic is chosen when users need to track or inquire about changes in pricing agreements.</description>
+    <developerName>p_16jgL000000N1rR_Track_Pricing_Changes</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__GetPolicyDetails</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about tracking pricing changes, use EmployeeCopilot__GetPolicyDetails.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide users with the latest updates on pricing agreements.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Track Pricing Changes</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only track and provide updates on pricing changes for agreements and contracts. This includes notifying users of any updates or changes.</scope>
+</GenAiPlugin>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SumExtAuthorizedServicesQuote__c</fullName>
+    <description>Contain the Summation of the Quotations Extended Authorized Price Points for Service Lines within the Quotation.</description>
+    <externalId>false</externalId>
+    <label>Sum of Ext Authorized Services for Quote</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

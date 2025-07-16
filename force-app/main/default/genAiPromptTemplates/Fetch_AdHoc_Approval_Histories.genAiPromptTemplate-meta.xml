@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Fetch_AdHoc_Approval_Histories</developerName>
+    <masterLabel>Fetch AdHoc Approval Histories</masterLabel>
+    <relatedEntity>Quote__c</relatedEntity>
+    <templateVersions>
+        <content>Fetch {!$RelatedList:Quote__c.Approval_Histories__r.Records} Where Ad_Hoc_Price_Status__c = Pending and Loop through the records and display a summary of results.
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Quote__c</definition>
+            <referenceName>Input:Quote__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Quote__c.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Approval_Histories__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Quote__c.Approval_Histories__r.Records</referenceName>
+        </templateDataProviders>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Option__c</fullName>
+    <label>Document Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>BOM</fullName>
+                <default>false</default>
+                <label>BOM</label>
+            </value>
+            <value>
+                <fullName>BOM &amp; Drawings</fullName>
+                <default>false</default>
+                <label>BOM &amp; Drawings</label>
+            </value>
+            <value>
+                <fullName>Drawings</fullName>
+                <default>false</default>
+                <label>Drawings</label>
+            </value>
+            <value>
+                <fullName>Full Submittal Package</fullName>
+                <default>false</default>
+                <label>Full Submittal Package</label>
+            </value>
+            <value>
+                <fullName>Export Documents</fullName>
+                <default>false</default>
+                <label>Export Documents</label>
+            </value>
+            <value>
+                <fullName>Services BOM</fullName>
+                <default>false</default>
+                <label>Services BOM</label>
+            </value>
+            <value>
+                <fullName>EcoCare BOM</fullName>
+                <default>false</default>
+                <label>EcoCare BOM</label>
+            </value>
+            <value>
+                <fullName>Operation and Maintenance Manuals</fullName>
+                <default>false</default>
+                <label>Operation &amp; Maintenance Manuals</label>
+            </value>
+            <value>
+                <fullName>Panelboard Summary</fullName>
+                <default>false</default>
+                <label>Panelboard Summary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

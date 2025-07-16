@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_View</fullName>
+    <columns>NAME</columns>
+    <columns>spd_auth_dt__c</columns>
+    <columns>spd_auth_id__c</columns>
+    <columns>spd_auth_loc__c</columns>
+    <columns>spd_auth_tm__c</columns>
+    <columns>Name__c</columns>
+    <columns>spd_rev_num__c</columns>
+    <columns>spd_sbmt_dt__c</columns>
+    <columns>spd_sbmt_tm__c</columns>
+    <columns>Total_Book__c</columns>
+    <columns>Total_List__c</columns>
+    <columns>Total_Requested__c</columns>
+    <columns>Price_Authorizer__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Test View</label>
+</ListView>

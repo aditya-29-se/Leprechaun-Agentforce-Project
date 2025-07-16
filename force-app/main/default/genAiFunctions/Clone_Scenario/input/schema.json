@@ -1,0 +1,21 @@
+{
+  "required" : [ "newScenarioName", "scenarioId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "newScenarioName" : {
+      "title" : "newScenarioName",
+      "description" : "The name of new scenario. This will be provided by user as a result of a previous Action. Use that value.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "scenarioId" : {
+      "title" : "scenarioId",
+      "description" : "This will be a user input. Agent will be asking user to select a base scenario from a list of scenarios. When user selects an option from the list, use that as this input value",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

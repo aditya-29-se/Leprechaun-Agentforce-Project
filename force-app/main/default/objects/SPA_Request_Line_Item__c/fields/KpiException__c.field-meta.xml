@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KpiException__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox to determine if a Vistex Best Price Exception has been violated on a SPA request line item</description>
+    <label>KPI Exception</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

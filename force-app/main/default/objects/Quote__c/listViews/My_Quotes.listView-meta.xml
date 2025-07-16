@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Quotes</fullName>
+    <columns>ProposalName__c</columns>
+    <columns>NAME</columns>
+    <columns>Quote_Number__c</columns>
+    <columns>Status__c</columns>
+    <columns>Price_QueueName__c</columns>
+    <columns>Price_Authorizer_Name__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Quote_Submitted_DateTime__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Quotes</label>
+</ListView>

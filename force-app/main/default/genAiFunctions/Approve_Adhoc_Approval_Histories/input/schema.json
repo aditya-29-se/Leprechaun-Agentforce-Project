@@ -1,0 +1,18 @@
+{
+  "required" : [ "adhocApprovalHistoryIds" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "adhocApprovalHistoryIds" : {
+      "title" : "AdhocApprovalHistoryIds",
+      "description" : "List of IDs of Adhoc Approval History records",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__recordIdType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

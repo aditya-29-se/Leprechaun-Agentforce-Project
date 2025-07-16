@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Submit requests for special pricing on products. This topic is chosen when users need to request a discount or special rate for specific products.</description>
+    <developerName>p_16jgL000000N1rR_Request_Special_Pricing</developerName>
+    <genAiFunctions>
+        <functionName>SvcCopilotTmpl__CreateCase</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about submitting a special pricing request, use Create Special Pricing Request.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure all required information is collected before submitting the request.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Request Special Pricing</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only handle the submission of special pricing requests for products. This includes gathering necessary details from users and submitting the request.</scope>
+</GenAiPlugin>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Except_Plant_Price_Authorization_Rec_Type</fullName>
+    <active>true</active>
+    <label>Except Plant/Price Authorization Rec Type</label>
+    <picklistValues>
+        <picklist>Audience_Type__c</picklist>
+        <values>
+            <fullName>Approver%2FSubmitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE - Approval%2FSubmitter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NoteType__c</picklist>
+        <values>
+            <fullName>Aged Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing Note</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM Note</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

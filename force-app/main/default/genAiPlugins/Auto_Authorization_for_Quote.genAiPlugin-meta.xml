@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>When user asks something about auto authorization related details.</description>
+    <developerName>Auto_Authorization_for_Quote</developerName>
+    <genAiPluginInstructions>
+        <description>Get the Quote recordId from the page and get the authorization related object records.</description>
+        <developerName>instruction_getthequot0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_getthequot0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If authorization cannot be found, offer to escalate the issue to a human agent.</description>
+        <developerName>instruction_ifauthoriz1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauthoriz1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure all provided information is accurate and complete before concluding the interaction.</description>
+        <developerName>instruction_ensureallp2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ensureallp2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Auto Authorization for Quote</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Identify and retrieve details related to auto authorization processes for quotes. It includes the details like why a Quote is not auto authorized. It will also identify the authorization method used for the Quote</scope>
+</GenAiPlugin>

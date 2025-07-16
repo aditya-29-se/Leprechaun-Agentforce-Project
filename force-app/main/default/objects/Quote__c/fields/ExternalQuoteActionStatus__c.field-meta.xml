@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExternalQuoteActionStatus__c</fullName>
+    <formula>if( 
+ISPICKVAL( Status__c , &apos;Authorized&apos;) || ISPICKVAL( Status__c , &apos;Closed&apos;) ||ISPICKVAL( Status__c , &apos;Sleeping&apos;) || ISPICKVAL( Status__c , &apos;Not Authorized&apos;) || ISPICKVAL( Status__c , &apos;Finalized&apos;) || ISPICKVAL( Status__c , &apos;Submitted for Authorization&apos;)
+,false,
+if ( $Profile.Name == &apos;Distributor Quote Specialist&apos; &amp;&amp; 
+OR ( ISPICKVAL(  QuoteSubStatus__c  , &apos;Shared - Customer&apos;) , AND( isQuoteShareable__c , ISBLANK( Accepted_By__c ) ))
+, false , 
+if ( OR(ISPICKVAL(  QuoteSubStatus__c  , &apos;Shared - Distributor&apos;), AND(ISPICKVAL(  QuoteSharedWith__c, &apos;Shared - SE&apos;), OR(ISBLANK(Text(QuoteSubStatus__c)) , ISPICKVAL(  QuoteSubStatus__c, &apos;Shared - SE&apos;))))  &amp;&amp; ($Profile.Name == &apos;Indirect Purchaser&apos;)
+, false, true )
+))</formula>
+    <label>ExternalQuoteActionStatus</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

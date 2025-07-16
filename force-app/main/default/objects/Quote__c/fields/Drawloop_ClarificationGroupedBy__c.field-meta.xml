@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drawloop_ClarificationGroupedBy__c</fullName>
+    <defaultValue>&quot;No Grouping&quot;</defaultValue>
+    <label>Drawloop Clarification Grouped By</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Grouping</fullName>
+                <default>false</default>
+                <label>No Grouping</label>
+            </value>
+            <value>
+                <fullName>Clarification Type</fullName>
+                <default>false</default>
+                <label>Clarification Type</label>
+            </value>
+            <value>
+                <fullName>Support Group</fullName>
+                <default>false</default>
+                <label>Support Group</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Specification Section</fullName>
+                <default>false</default>
+                <label>Specification Section</label>
+            </value>
+            <value>
+                <fullName>Drawing Number</fullName>
+                <default>false</default>
+                <label>Drawing Number</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

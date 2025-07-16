@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Government_Classification__c</fullName>
+    <label>US Government Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Federal Govt- Defense Contractor</fullName>
+                <default>false</default>
+                <label>Federal Govt- Defense Contractor</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Dept of Defense- Air Force</fullName>
+                <default>false</default>
+                <label>Federal Govt- Dept of Defense- Air Force</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Dept of Defense- Army</fullName>
+                <default>false</default>
+                <label>Federal Govt- Dept of Defense- Army</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Dept of Defense- Navy/Marines</fullName>
+                <default>false</default>
+                <label>Federal Govt- Dept of Defense- Navy/Marines</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Dept of Defense- Other</fullName>
+                <default>false</default>
+                <label>Federal Govt- Dept of Defense- Other</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Dept of Energy</fullName>
+                <default>false</default>
+                <label>Federal Govt- Dept of Energy</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Dept of State</fullName>
+                <default>false</default>
+                <label>Federal Govt- Dept of State</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- DOT/FAA</fullName>
+                <default>false</default>
+                <label>Federal Govt- DOT/FAA</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- GSA/Federal Building</fullName>
+                <default>false</default>
+                <label>Federal Govt- GSA/Federal Building</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Intelligence Agency</fullName>
+                <default>false</default>
+                <label>Federal Govt- Intelligence Agency</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Judicial Branch</fullName>
+                <default>false</default>
+                <label>Federal Govt- Judicial Branch</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Legislative Branch</fullName>
+                <default>false</default>
+                <label>Federal Govt- Legislative Branch</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- NASA Facility</fullName>
+                <default>false</default>
+                <label>Federal Govt- NASA Facility</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- National Institute of Health (NIH)</fullName>
+                <default>false</default>
+                <label>Federal Govt- National Institute of Health (NIH)</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- VA Hospital</fullName>
+                <default>false</default>
+                <label>Federal Govt- VA Hospital</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- Other Civilian Agency</fullName>
+                <default>false</default>
+                <label>Federal Govt- Other Civilian Agency</label>
+            </value>
+            <value>
+                <fullName>Federal Govt- All Other</fullName>
+                <default>false</default>
+                <label>Federal Govt- All Other</label>
+            </value>
+            <value>
+                <fullName>State/Local- Government Building</fullName>
+                <default>false</default>
+                <label>State/Local- Government Building</label>
+            </value>
+            <value>
+                <fullName>State/Local- Hospital</fullName>
+                <default>false</default>
+                <label>State/Local- Hospital</label>
+            </value>
+            <value>
+                <fullName>State/Local- University</fullName>
+                <default>false</default>
+                <label>State/Local- University</label>
+            </value>
+            <value>
+                <fullName>State/Local- WWTP</fullName>
+                <default>false</default>
+                <label>State/Local- WWTP</label>
+            </value>
+            <value>
+                <fullName>State/Local- All Other</fullName>
+                <default>false</default>
+                <label>State/Local- All Other</label>
+            </value>
+            <value>
+                <fullName>Non Government</fullName>
+                <default>true</default>
+                <label>Non Government</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

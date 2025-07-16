@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubStatus__c</fullName>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Authorization</fullName>
+                <default>false</default>
+                <label>Pending Authorization</label>
+            </value>
+            <value>
+                <fullName>Authorization in Progress</fullName>
+                <default>false</default>
+                <label>Authorization in Progress</label>
+            </value>
+            <value>
+                <fullName>Pending Review</fullName>
+                <default>false</default>
+                <label>Pending Review</label>
+            </value>
+            <value>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+                <label>Under Review</label>
+            </value>
+            <value>
+                <fullName>PA Agreement - Integration Error</fullName>
+                <default>false</default>
+                <label>PA Agreement - Integration Error</label>
+            </value>
+            <value>
+                <fullName>Submitted to Sales</fullName>
+                <default>false</default>
+                <label>Submitted to Sales</label>
+            </value>
+            <value>
+                <fullName>Not Validated</fullName>
+                <default>false</default>
+                <label>Not Validated</label>
+            </value>
+            <value>
+                <fullName>Return to Distributor</fullName>
+                <default>false</default>
+                <label>Return to Distributor</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Draft</controllingFieldValue>
+            <controllingFieldValue>Not Authorized</controllingFieldValue>
+            <valueName>Submitted to Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Draft</controllingFieldValue>
+            <valueName>Not Validated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Authorized</controllingFieldValue>
+            <valueName>Return to Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Submitted for Authorization</controllingFieldValue>
+            <valueName>Pending Authorization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Submitted for Authorization</controllingFieldValue>
+            <valueName>Authorization in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Authorized</controllingFieldValue>
+            <valueName>PA Agreement - Integration Error</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

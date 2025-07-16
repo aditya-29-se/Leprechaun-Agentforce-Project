@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drawloop_Type_of_Pricing__c</fullName>
+    <label>Type of Pricing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DISTRIBUTOR SELL PRICE</fullName>
+                <default>false</default>
+                <label>DISTRIBUTOR SELL PRICE</label>
+            </value>
+            <value>
+                <fullName>LIST</fullName>
+                <default>false</default>
+                <label>LIST</label>
+            </value>
+            <value>
+                <fullName>PROFILE</fullName>
+                <default>false</default>
+                <label>PROFILE</label>
+            </value>
+            <value>
+                <fullName>AUTHORIZED</fullName>
+                <default>false</default>
+                <label>AUTHORIZED</label>
+            </value>
+            <value>
+                <fullName>CUSTOM PRICE</fullName>
+                <default>false</default>
+                <label>CUSTOM PRICE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

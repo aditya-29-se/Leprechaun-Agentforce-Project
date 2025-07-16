@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This topic handles requests related to the authorization of quotes. It is triggered when a user asks the Agent to authorize a quote. This includes actions related to both authorization and communication stream creation when user input involves authorization notes. This adjustment will aid in correctly classifying and triggering the appropriate actions for such requests.</description>
+    <developerName>Quote_Authorization</developerName>
+    <genAiFunctions>
+        <functionName>Fetch_AdHoc_Approval_Histories</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Approve_Adhoc_Approval_Histories</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Authorize_Quote_and_Create_Communication_Stream</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Check for any Approval_History__c records present with Ad_Hoc_Price_Status__c as Pending. If there are records present, Agent needs to show the summary of those records to User and ask if he/she needs to Approve these AdHoc items.</description>
+        <developerName>instruction_checkforan0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_checkforan0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Finally, the Quote record should get updated with Status__c equal to Authorized</description>
+        <developerName>instruction_finallythe1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_finallythe1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If Note is entered, a communication stream record will be created for that Quote with the entered Note</description>
+        <developerName>instruction_ifnoteisen2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifnoteisen2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user provides incomplete information, ask for additional details to ensure proper authorization.</description>
+        <developerName>instruction_iftheuserp3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserp3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer guidance on the authorization process, including any necessary steps the user must complete.</description>
+        <developerName>instruction_offerguida4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_offerguida4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once Approval_History__c records Ad_Hoc_Price_Status__c set to Authorized , Agent should ask User if he/she wants to enter any Note before Authorizing Quote</description>
+        <developerName>instruction_onceapprov5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_onceapprov5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Once the Adhoc Items are approved, Agent will update the Ad_Hoc_Price_Status__c to Authorized</description>
+        <developerName>instruction_oncetheadh6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_oncetheadh6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Verify the details of the quote before proceeding with authorization.</description>
+        <developerName>instruction_verifythed7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_verifythed7</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When Quote is updated to Authorized, inform User that the Quote is successfully Authorized</description>
+        <developerName>instruction_whenquotei8</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenquotei8</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>when a user enters a Note for Authorization, the agent should immediately call the Authorize Quote and Create Communication Stream action. This ensures that the quote is marked as authorized and a communication stream is created without delay.</description>
+        <developerName>instruction_whenausere9</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenausere9</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quote Authorization</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>You are responsible for managing quote authorization requests. Ensure quotes are properly authorized within the defined parameters.</scope>
+</GenAiPlugin>

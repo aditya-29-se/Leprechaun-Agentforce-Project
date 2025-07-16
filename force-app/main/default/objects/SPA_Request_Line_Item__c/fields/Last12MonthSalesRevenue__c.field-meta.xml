@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last12MonthSalesRevenue__c</fullName>
+    <description>Last 12 Months Revenue of Sales for the Special Price Agreement associated with the SPA Request</description>
+    <externalId>false</externalId>
+    <label>Last 12 Month Sales Revenue</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

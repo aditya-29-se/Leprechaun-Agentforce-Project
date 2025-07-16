@@ -1,0 +1,21 @@
+{
+  "required" : [ "note", "quoteId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "note" : {
+      "title" : "Note",
+      "description" : "The note for the communication stream. If Note is not entered after asking, call the Apex action with note value as null",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "quoteId" : {
+      "title" : "Quote Id",
+      "description" : "The Id of the Quote record",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

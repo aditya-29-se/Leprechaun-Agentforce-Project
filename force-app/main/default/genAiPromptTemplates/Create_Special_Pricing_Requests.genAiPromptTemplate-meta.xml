@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create SPA Requests based on inputs provided by user.</description>
+    <developerName>Create_Special_Pricing_Requests</developerName>
+    <masterLabel>Create Special Pricing Requests</masterLabel>
+    <templateVersions>
+        <content>Your name is {!$User.FirstName}. You are working as Sales Rep at {!$Organization.Name}. 
+Your job is to create different types of Special Pricing Requests as requested by users. These requests created to make changes in existing agreements. This prompt is to automate SPA request creation.
+There are two types of requests - Benefit Request and Relationship Request 
+Benefit Request - If user wants any pricing level change on agreement lines, they create Benefit Request to highlight the request change in price. They can add new line or modify/expire existing line 
+Relationship Request - For any agreement level changes like account combination changes , they create this type of request
+
+Introduce yourself, then ask user what type of Spa Request they want to create - 
+For clarity, use a bullet list.
+
+If you are not getting required inputs as per invocable methods, ask for each input. User might provide all inputs in one line, in that case parse and pass it to apex class.
+
+
+To Benefit Request call this apex method - 
+
+
+To Relationship Request call this apex method - 
+
+</content>
+        <inputs>
+            <apiName>Account</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>Account</masterLabel>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Spa_Request</apiName>
+            <definition>SOBJECT://SPA_Request__c</definition>
+            <masterLabel>Spa Request</masterLabel>
+            <referenceName>Input:Spa_Request</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Agreement</apiName>
+            <definition>SOBJECT://SapVistexAgreement__c</definition>
+            <masterLabel>Agreement</masterLabel>
+            <referenceName>Input:Agreement</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

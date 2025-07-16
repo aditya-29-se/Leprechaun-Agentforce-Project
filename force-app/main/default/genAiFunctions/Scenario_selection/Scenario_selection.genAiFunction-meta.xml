@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When user ask about creating a new scenario, use this action. This will fetch the existing available scenarios and ask user to select one as the base scenario to create a new one out of it.</description>
+    <invocationTarget>Scenario_selection</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Scenario selection</masterLabel>
+</GenAiFunction>

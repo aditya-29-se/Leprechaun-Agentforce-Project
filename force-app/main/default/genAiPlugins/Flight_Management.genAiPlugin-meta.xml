@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Handles inquiries related to flight bookings, changes, cancellations, and general flight information. This includes managing customer requests for flight details and resolving issues related to flights.</description>
+    <developerName>Flight_Management</developerName>
+    <genAiFunctions>
+        <functionName>Find_Flights</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user wants to book a flight, gather travel dates, destination, and passenger details.</description>
+        <developerName>instruction_ifauserwan0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserwan0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a user requests to change a flight, ask for the booking reference number and the new preferred travel dates.</description>
+        <developerName>instruction_whenauserr1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whenauserr1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user wants to cancel a flight, confirm the booking reference number and provide information on any applicable cancellation fees.</description>
+        <developerName>instruction_ifauserwan2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_ifauserwan2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer to provide flight status updates by asking for the flight number or departure date.</description>
+        <developerName>instruction_offertopro3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_offertopro3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a customer has an issue with their flight, gather all relevant details and escalate to a human agent if necessary.</description>
+        <developerName>instruction_whenacusto4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_whenacusto4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Flight Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users with flight-related queries, including booking, modifying, or canceling flights, providing flight status updates, and addressing any concerns or issues related to flights. Do not handle inquiries outside of flight management.</scope>
+</GenAiPlugin>

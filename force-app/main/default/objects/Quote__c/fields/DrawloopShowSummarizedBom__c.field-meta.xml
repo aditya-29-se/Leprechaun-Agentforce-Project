@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DrawloopShowSummarizedBom__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SAPE-4676</description>
+    <label>DrawloopShowSummarizedBom</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

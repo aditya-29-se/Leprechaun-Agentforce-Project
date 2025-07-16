@@ -1,0 +1,25 @@
+{
+  "required" : [ "lines", "SapAgreementNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "lines" : {
+      "title" : "Benefit Lines",
+      "description" : "This is of List Type to create benefit lines. Show ItemCode, ListPrice, Operation, ExpirationDate as input boxes. Give plus icon to add more lines and display above fields in a new row",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__BenefitRequestController$BenefitRequestInput"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "SapAgreementNumber" : {
+      "title" : "Agreement Number",
+      "description" : "This is unique text which identify Pricing Agreement Record. Use this to link Spa Request with Agreements.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

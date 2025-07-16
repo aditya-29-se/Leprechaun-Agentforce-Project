@@ -1,0 +1,35 @@
+{
+  "required" : [ "DirectAccountId", "InDirectAccountId", "Operation", "SapAgreementNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "DirectAccountId" : {
+      "title" : "DirectAccountId",
+      "description" : "This is Direct Account Id. User might provide account names then Find account Id by running query by its name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "InDirectAccountId" : {
+      "title" : "InDirectAccountId",
+      "description" : "This is Indirect Account Id This is Direct Account Id. User might provide account names then Find account Id by running query by its name",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "Operation" : {
+      "title" : "Operation",
+      "description" : "What type operation user wants to do - Expire or Add",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "SapAgreementNumber" : {
+      "title" : "SapAgreementNumber",
+      "description" : "This is unique text which identify Pricing Agreement Record. Use this to link Spa Request with Agreements.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Provide information on applicable discounts and promotions for customer quotations. This topic is selected when customers inquire about discounts or promotions that can be applied to their quotation.</description>
+    <developerName>p_16jgL000000N2SX_Discount_and_Promotion_Pricing</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When a customer asks about discounts or promotions, use EmployeeCopilot__LabelARecord to apply relevant labels for discounts or promotions.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Discount and Promotion Pricing</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only provide information on applicable discounts and promotions for customer quotations. You aren&apos;t able to apply discounts or make price adjustments.</scope>
+</GenAiPlugin>

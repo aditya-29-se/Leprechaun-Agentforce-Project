@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalDatesFirmStatus__c</fullName>
+    <description>Workflow field which is utilized when a request is made to change Benefit Effective and/or Expiration Dates and/or contains a Firm indicator as True</description>
+    <label>Approval Dates and Firm Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Authorization</fullName>
+                <default>false</default>
+                <label>Pending Authorization</label>
+            </value>
+            <value>
+                <fullName>Authorized</fullName>
+                <default>false</default>
+                <label>Authorized</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

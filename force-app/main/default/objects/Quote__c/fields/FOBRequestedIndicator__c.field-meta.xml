@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FOBRequestedIndicator__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>FOB - If any of the lines in LiG contain a FOB Point value of &quot;Shipping Point&quot;, &quot;Free Delivery Point&quot;, or &quot;Other&quot; then &quot;FOBRequestedIndicator&quot; and &quot;FOBAcceptedIndicator&quot; should be set to &quot;Y&quot;</description>
+    <inlineHelpText>FOB - If any of the lines in LiG contain a FOB Point value of &quot;Shipping Point&quot;, &quot;Free Delivery Point&quot;, or &quot;Other&quot; then &quot;FOBRequestedIndicator&quot; and &quot;FOBAcceptedIndicator&quot; should be set to &quot;Y&quot;</inlineHelpText>
+    <label>FOBRequestedIndicator</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

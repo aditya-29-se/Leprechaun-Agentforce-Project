@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdditionalInformation__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;../apex/VFP_CommunicationStream?Id=&quot; &amp; Id , &quot;SPD Notes (Required)&quot;, &quot;_blank&quot;)&amp; BR() &amp;
+HYPERLINK(&quot;../apex/QuoteApprovalHistoryPage?Id=&quot; &amp; Id , &quot;Quote Level Approval Request (Optional)&quot;, &quot;_blank&quot;) &amp; BR()</formula>
+    <label>Additional Information</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Quote</label>
+    <referenceTo>Quote__c</referenceTo>
+    <relationshipLabel>SPD REV Levels</relationshipLabel>
+    <relationshipName>SPD_REV_Levels</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

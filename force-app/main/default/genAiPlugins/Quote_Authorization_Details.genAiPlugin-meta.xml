@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This topic retrieves previous authorization details for a quote and provides a summary of the information.</description>
+    <developerName>Quote_Authorization_Details</developerName>
+    <genAiFunctions>
+        <functionName>Quote_Auth_Summary_Flow</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Auto_Auth_Failure_Reason</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask the user for the quote number and the spd rev number to locate the authorization details.</description>
+        <developerName>instruction_asktheuser0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_asktheuser0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user does not have the quote number, offer to escalate the request to a human agent.</description>
+        <developerName>instruction_iftheuserd1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheuserd1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Summarize the authorization details clearly and concisely once retrieved.</description>
+        <developerName>instruction_summarizet2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_summarizet2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Verify the accuracy of the authorization details before presenting them to the user.</description>
+        <developerName>instruction_verifythea3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_verifythea3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quote Previous Authorization Details</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to obtain the previous authorization details for quotes and summarize the findings for the user.</scope>
+</GenAiPlugin>

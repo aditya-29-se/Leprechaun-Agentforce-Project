@@ -1,0 +1,21 @@
+{
+  "required" : [ "quoteId", "spdrev" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "quoteId" : {
+      "title" : "quoteId",
+      "description" : "This is 18 digit Quote Record ID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "spdrev" : {
+      "title" : "spdrev",
+      "description" : "This is an integer value",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

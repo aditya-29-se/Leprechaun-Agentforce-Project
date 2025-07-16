@@ -1,0 +1,24 @@
+{
+  "required" : [ "Input:Quote__c" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Quote__c" : {
+      "title" : "objectToSummarize",
+      "description" : "This is the current Record",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Quote__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "outputLanguage" : {
+      "title" : "Prompt Operation output language",
+      "description" : "Select Prompt Operation output language",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

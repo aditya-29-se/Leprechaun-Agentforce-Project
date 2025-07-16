@@ -1,0 +1,14 @@
+{
+  "required" : [ "SapAgreementNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "SapAgreementNumber" : {
+      "title" : "SapAgreementNumber",
+      "description" : "This is unique text which identify Pricing Agreement Record. Use this to link Spa Request with Agreements.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

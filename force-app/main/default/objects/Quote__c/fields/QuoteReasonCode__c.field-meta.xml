@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteReasonCode__c</fullName>
+    <description>Indicate the reason why the quote was created.</description>
+    <label>Quote Reason Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>QRC1</fullName>
+                <default>false</default>
+                <label>Initial Request</label>
+            </value>
+            <value>
+                <fullName>QRC4</fullName>
+                <default>false</default>
+                <label>Updated Bid Documents and/or Customer Requested Change</label>
+            </value>
+            <value>
+                <fullName>QRC7</fullName>
+                <default>false</default>
+                <label>Alternate / Option / VE</label>
+            </value>
+            <value>
+                <fullName>QRC10</fullName>
+                <default>false</default>
+                <label>Schneider Error</label>
+            </value>
+            <value>
+                <fullName>QRC13</fullName>
+                <default>false</default>
+                <label>Schneider Error &amp; Customer Requested Change</label>
+            </value>
+            <value>
+                <fullName>QRC16</fullName>
+                <default>false</default>
+                <label>Pricing Update Only</label>
+            </value>
+            <value>
+                <fullName>QRC19</fullName>
+                <default>false</default>
+                <label>Order Conversion Clean Up</label>
+            </value>
+            <value>
+                <fullName>QRC100</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

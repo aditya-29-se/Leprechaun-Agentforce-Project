@@ -1,0 +1,21 @@
+{
+  "required" : [ "LineNumber", "SpdRev" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "LineNumber" : {
+      "title" : "LineNumber",
+      "description" : "This will be a text. This should be retrieved from User",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "SpdRev" : {
+      "title" : "SpdRev",
+      "description" : "This will be a text. This should be retrieved from User.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

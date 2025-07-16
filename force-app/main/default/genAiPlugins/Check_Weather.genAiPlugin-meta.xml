@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>This topic handles user requests related to checking current weather conditions and forecasts. It triggers when users inquire about weather updates.</description>
+    <developerName>Check_Weather</developerName>
+    <genAiFunctions>
+        <functionName>Check_Weather</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the user provides a location, use it to fetch the weather information.</description>
+        <developerName>instruction_iftheuserp0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserp0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the user does not provide a location, ask for the location to proceed.</description>
+        <developerName>instruction_iftheuserd1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_iftheuserd1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide current weather conditions including temperature, humidity, and weather description.</description>
+        <developerName>instruction_providecur2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_providecur2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Offer a forecast for the next few days if the user requests it.</description>
+        <developerName>instruction_offerafore3</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_offerafore3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Clarify any ambiguous location requests by asking for more specific details.</description>
+        <developerName>instruction_clarifyany4</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_clarifyany4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Check Weather</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide current weather conditions and forecasts based on the user&apos;s location or specified location.</scope>
+</GenAiPlugin>

@@ -1,0 +1,24 @@
+{
+  "required" : [ "Input:Quote__c" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Quote__c" : {
+      "title" : "objectToSummarize",
+      "description" : "This is Id of Salesforce Object used to generate the summary.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Quote__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "outputLanguage" : {
+      "title" : "Prompt Operation output language",
+      "description" : "Select Prompt Operation output language",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

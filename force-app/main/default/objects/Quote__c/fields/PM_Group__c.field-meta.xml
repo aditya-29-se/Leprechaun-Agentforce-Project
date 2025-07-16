@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PM_Group__c</fullName>
+    <description>The group that the project manager belongs to when submitting the orders.  It will get stored on the quote object.</description>
+    <inlineHelpText>The group of the project manager.  It can be changed in your user profile.</inlineHelpText>
+    <label>PM Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Channel</fullName>
+                <default>false</default>
+                <label>Channel</label>
+            </value>
+            <value>
+                <fullName>DCS PIE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DCS PIE</label>
+            </value>
+            <value>
+                <fullName>DCS PIE - AMZN</fullName>
+                <default>false</default>
+                <label>DCS PIE - AMZN</label>
+            </value>
+            <value>
+                <fullName>DCS PIE - CG</fullName>
+                <default>false</default>
+                <label>DCS PIE - CG</label>
+            </value>
+            <value>
+                <fullName>DCS PIE - FB</fullName>
+                <default>false</default>
+                <label>DCS PIE - FB</label>
+            </value>
+            <value>
+                <fullName>DCS PIE - MSFT</fullName>
+                <default>false</default>
+                <label>DCS PIE - MSFT</label>
+            </value>
+            <value>
+                <fullName>DCS PIE - ROB</fullName>
+                <default>false</default>
+                <label>DCS PIE - ROB</label>
+            </value>
+            <value>
+                <fullName>End User</fullName>
+                <default>false</default>
+                <label>End User</label>
+            </value>
+            <value>
+                <fullName>EOEM</fullName>
+                <default>false</default>
+                <label>EOEM</label>
+            </value>
+            <value>
+                <fullName>International</fullName>
+                <default>false</default>
+                <label>International</label>
+            </value>
+            <value>
+                <fullName>NS GEO</fullName>
+                <default>false</default>
+                <label>NS GEO</label>
+            </value>
+            <value>
+                <fullName>OEM</fullName>
+                <default>false</default>
+                <label>OEM</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Water</fullName>
+                <default>false</default>
+                <label>Water</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

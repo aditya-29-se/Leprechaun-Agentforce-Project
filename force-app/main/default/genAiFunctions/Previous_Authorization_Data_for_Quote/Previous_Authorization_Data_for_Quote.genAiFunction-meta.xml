@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When user asks about previous authorization details, execute this action. This action will bring the Previous authorization details like total requested Price, total Authorized Price, Price Authorizer name, Quote Submitter Name, Authorrized Date, Submitted Date, SPD Rev Number, etc. This action will utilize SPD_REV_LEVEL__c object and its records which are related to a Quote to identify the details.</description>
+    <invocationTarget>Previous_Authorization_Data_for_Quote</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <mappingAttributes>
+        <label>outputLanguage</label>
+        <name>input_outputLanguage</name>
+        <parameterName>outputLanguage</parameterName>
+        <parameterType>input</parameterType>
+    </mappingAttributes>
+    <masterLabel>Previous Authorization Data for Quote</masterLabel>
+</GenAiFunction>

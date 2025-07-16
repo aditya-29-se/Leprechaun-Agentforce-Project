@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drawloop_Do_not_show_logo_on_cover_page__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When this box is checked, the cover page will not have a logo.</description>
+    <inlineHelpText>When this box is checked, the cover page will not have a logo.</inlineHelpText>
+    <label>Do not show logo on cover page</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

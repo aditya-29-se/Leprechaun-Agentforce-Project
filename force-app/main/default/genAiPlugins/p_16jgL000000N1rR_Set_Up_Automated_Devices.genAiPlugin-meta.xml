@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Guide on installation of house automation devices. This topic is chosen when users need assistance with setting up or troubleshooting automated devices.</description>
+    <developerName>p_16jgL000000N1rR_Set_Up_Automated_Devices</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the query is about setting up automated devices, use EmployeeCopilot__AnswerQuestionsWithKnowledge.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide clear and concise instructions for installation and troubleshooting.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Set Up Automated Devices</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only provide guidance on the installation and troubleshooting of house automation devices. This includes step-by-step instructions and answering related queries.</scope>
+</GenAiPlugin>

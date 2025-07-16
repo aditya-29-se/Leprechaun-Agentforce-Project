@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Availabilty_Refresh_Date__c</fullName>
+    <description>This field stores date and time when the Refresh button on the Availability tab is selected.  Keeping track of when the estimated ship days (lead time) were last refreshed</description>
+    <label>Last Refreshed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPARequest__c</fullName>
+    <label>SPA Request</label>
+    <referenceTo>SPA_Request__c</referenceTo>
+    <relationshipLabel>SPA Request Eligibilities</relationshipLabel>
+    <relationshipName>SPA_Request_Eligibilities</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This prompt builder template summarizes the case records.</description>
+    <developerName>Case_Record_Summary</developerName>
+    <masterLabel>Case Record Summary</masterLabel>
+    <relatedEntity>Case</relatedEntity>
+    <templateVersions>
+        <content>Summarize the case record. Write possible solutions in bullet points.
+
+Case Subject: {!$Input:Case.Subject}
+Case Description: {!$Input:Case.Description}
+Case Priority: {!$Input:Case.Priority}
+Case Origin: {!$Input:Case.Origin}
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Case</definition>
+            <referenceName>Input:Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

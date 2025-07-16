@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>QuoteId</label>
+    <referenceTo>Quote__c</referenceTo>
+    <relationshipLabel>PI Scenarios</relationshipLabel>
+    <relationshipName>PI_Scenarios</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

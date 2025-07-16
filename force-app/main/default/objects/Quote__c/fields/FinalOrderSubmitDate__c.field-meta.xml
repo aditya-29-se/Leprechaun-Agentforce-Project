@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinalOrderSubmitDate__c</fullName>
+    <description>This field will track the final time the user submits the quote to an order. The user could have to submit the quote again if there is an Order Submit Failure.</description>
+    <inlineHelpText>This field will track the final time the user submits the quote to an order. The user could have to submit the quote again if there is an Order Submit Failure.</inlineHelpText>
+    <label>Final Order Submit Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

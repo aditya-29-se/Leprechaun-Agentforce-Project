@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action needs to create a communication stream record with a User specified Note under the Quote when user says that the Quote cannot be authorized or need to mark this quote as Not Authorized. This actions should be invoked when a user indicates that the quote cannot be authorized.</description>
+    <invocationTarget>Not_Authorize_Note_Creation</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Not Authorize Note Creation</masterLabel>
+</GenAiFunction>

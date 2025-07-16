@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rebate_TOMV__c</fullName>
+    <description>This field is the AMOUNT of the Rebate or CNI that will be issued.  It is the Distributor Into Stock Profile Price less the Authorized TOMV amount.  Another field called Rebate TOMV with the API name of RebateTOMV__c is the amount of the Authorized TOMV that is associated to the rebate when a quote is mixed rebate and order.  Order TOMV + Rebate TOMV = Authorized TOMV</description>
+    <label>Rebate Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

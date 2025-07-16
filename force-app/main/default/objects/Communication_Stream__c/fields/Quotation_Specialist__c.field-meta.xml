@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quotation_Specialist__c</fullName>
+    <formula>IF(AND($Profile.Name = &apos;Quotation Specialist&apos;,
+       ISPICKVAL(Audience_Type__c , &apos;Approver to Approver&apos;)), True, False)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Quotation Specialist</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

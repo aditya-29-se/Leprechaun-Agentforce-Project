@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>S4PaymentTerms__c</fullName>
+    <description>S4 Code which will represent the default or requested (if changed) payment terms for the Quotation</description>
+    <label>S4 Payment Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0N04</fullName>
+                <default>false</default>
+                <label>0%  Discount - Net Due 30 Days</label>
+            </value>
+            <value>
+                <fullName>1N09</fullName>
+                <default>false</default>
+                <label>0%  Discount - Net Due 45 Days</label>
+            </value>
+            <value>
+                <fullName>2N01</fullName>
+                <default>false</default>
+                <label>0%  Discount - Net Due 60 Days</label>
+            </value>
+            <value>
+                <fullName>2N00</fullName>
+                <default>false</default>
+                <label>0%  Discount - Net Due 75 Days</label>
+            </value>
+            <value>
+                <fullName>2N07</fullName>
+                <default>false</default>
+                <label>0%  Discount - Net Due 85 Days</label>
+            </value>
+            <value>
+                <fullName>3N00</fullName>
+                <default>false</default>
+                <label>0%  Discount - Net Due 90 Days</label>
+            </value>
+            <value>
+                <fullName>4N00</fullName>
+                <default>false</default>
+                <label>0% Discount - Net Due 120 Days</label>
+            </value>
+            <value>
+                <fullName>0D04</fullName>
+                <default>false</default>
+                <label>1% Discount 10th - Net Due 25th</label>
+            </value>
+            <value>
+                <fullName>0D05</fullName>
+                <default>false</default>
+                <label>2% Discount 10th - Net Due 25th</label>
+            </value>
+            <value>
+                <fullName>0D10</fullName>
+                <default>false</default>
+                <label>2% Discount 30th - Net Due 31st</label>
+            </value>
+            <value>
+                <fullName>1D19</fullName>
+                <default>false</default>
+                <label>2% Discount 10th - Net Due 30 Days</label>
+            </value>
+            <value>
+                <fullName>2D21</fullName>
+                <default>false</default>
+                <label>2% Discount 10th - Net Due 60 Days</label>
+            </value>
+            <value>
+                <fullName>2D05</fullName>
+                <default>false</default>
+                <label>2% Discount 30th - Net Due 60 Days</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

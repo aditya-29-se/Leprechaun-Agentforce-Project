@@ -1,0 +1,14 @@
+{
+  "required" : [ "QuoteId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "QuoteId" : {
+      "title" : "QuoteId",
+      "description" : "This is 18 digit Quote Record Id",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

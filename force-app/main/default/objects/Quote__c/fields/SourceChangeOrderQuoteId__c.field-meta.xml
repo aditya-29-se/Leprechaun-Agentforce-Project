@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SourceChangeOrderQuoteId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Quote that was provided to create (copy from) the Change Quote.</description>
+    <label>Source Change Order Quote Id</label>
+    <referenceTo>Quote__c</referenceTo>
+    <relationshipLabel>Quotes (Source Change Order Quote Id)</relationshipLabel>
+    <relationshipName>SourceChangeOrderQuotes</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

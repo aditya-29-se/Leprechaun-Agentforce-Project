@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Indicator__c</fullName>
+    <description>API Name is being passed to ERP(Q2C)</description>
+    <label>Price Indicator</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>Category (PDCAT)</label>
+            </value>
+            <value>
+                <fullName>I</fullName>
+                <default>false</default>
+                <label>Catalog Item</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>Discount Schedule</label>
+            </value>
+            <value>
+                <fullName>Value1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Value1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

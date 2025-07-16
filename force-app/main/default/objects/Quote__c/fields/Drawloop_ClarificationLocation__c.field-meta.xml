@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drawloop_ClarificationLocation__c</fullName>
+    <defaultValue>&quot;First Page, Before BOM&quot;</defaultValue>
+    <description>Placement of the Clarifications and Exceptions on print BOM</description>
+    <label>Drawloop Clarification Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>First Page, Before BOM</fullName>
+                <default>false</default>
+                <label>First Page, Before BOM</label>
+            </value>
+            <value>
+                <fullName>Separate C/E Text</fullName>
+                <default>false</default>
+                <label>Separate C/E Text</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

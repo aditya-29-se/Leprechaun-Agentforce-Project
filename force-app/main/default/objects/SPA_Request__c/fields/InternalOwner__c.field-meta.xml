@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InternalOwner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field used to capture the Internal owner of a SPA Request - Sales Rep who reviews the request.</description>
+    <label>Internal Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>SPARequestsInternalOwners</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

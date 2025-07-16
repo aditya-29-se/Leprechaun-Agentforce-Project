@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>AgreementType__c</fields>
+    <fields>SapAgreementNumber__c</fields>
+    <fields>DirectAccountLookup__c</fields>
+    <fields>IndirectAccountLookup__c</fields>
+    <fields>SeInDirectAccount__c</fields>
+    <fields>EligabilityExpireDate__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This topic handles inquiries related to obtaining summary and basic details of Quote Records and their associated child records. i\It includes handling inquiries related to Quote Line items as part of the child records associated with Quote Records. This will aid in more precise topic classification when users request information about Quote Line items.</description>
+    <developerName>Quote_Record_Summary</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__DraftOrReviseEmail</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyObjectByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecordsWithAggregate</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__SummarizeRecord</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Gather as much information as possible from the user by asking clarifying questions.</description>
+        <developerName>instruction_gatherasmu0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_gatherasmu0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If additional details are needed, ask the user for specific information to narrow down the search.</description>
+        <developerName>instruction_ifaddition1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifaddition1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Include information about child records associated with the Quote Record.</description>
+        <developerName>instruction_includeinf2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_includeinf2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide a summary of the Quote Record including key details such as Quote ID, date, and status.</description>
+        <developerName>instruction_provideasu3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_provideasu3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When User asks about Quote Line Items, get the Quote_Line_item__c records where Quote__c equal to the current Quote record and provide the record details</description>
+        <developerName>instruction_whenuseras4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuseras4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quote Record Summary</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to provide summary and basic details of the Quote Record and its child records.</scope>
+</GenAiPlugin>

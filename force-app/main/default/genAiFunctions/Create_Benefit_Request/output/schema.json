@@ -1,0 +1,24 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "newRequestId" : {
+      "title" : "newRequestId",
+      "description" : "In case success, you will get Spa Request Id. Query by this Id and show Name as hyper link and below columns Status,Agreement Number, Request Type.  Use this record Id to show Name as hyper link so that user can navigate to Spa Request Record.",
+      "lightning:type" : "lightning__recordIdType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "Prompt" : {
+      "title" : "Prompt",
+      "description" : "Success or Error Message to show it to user. For success, make it bold and green color while for error red.",
+      "lightning:type" : "lightning__richTextType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

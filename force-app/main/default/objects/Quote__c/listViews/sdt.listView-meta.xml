@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sdt</fullName>
+    <columns>Proposal_City__c</columns>
+    <columns>ProposalName__c</columns>
+    <columns>NAME</columns>
+    <columns>Quote_Number__c</columns>
+    <columns>Created_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>AuthorizedTOMV__c</columns>
+    <columns>Approval_Date__c</columns>
+    <columns>Price_Authorizer_Name__c</columns>
+    <columns>Distributor_Location__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>SalesOffice_Territory1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sales_Office_Territory_Number__c</field>
+        <operation>equals</operation>
+        <value>359</value>
+    </filters>
+    <label>Indianapolis Queue</label>
+</ListView>

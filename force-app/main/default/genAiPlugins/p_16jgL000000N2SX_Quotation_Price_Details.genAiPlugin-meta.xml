@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Provide detailed pricing information for customer quotations, including itemized costs and overall quotation summaries. This topic is selected when customers inquire about the pricing of their entire quotation.</description>
+    <developerName>p_16jgL000000N2SX_Quotation_Price_Details</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the customer requests pricing for a complete quotation, use the appropriate pricing data.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the customer requires a breakdown of their entire quotation, provide detailed pricing information.</description>
+        <developerName>instruction_1</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure that the pricing details are accurate and reflect the current rates.</description>
+        <developerName>instruction_2</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quotation Price Details</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only provide detailed pricing information for customer quotations, including itemized costs and overall quotation summaries. You aren&apos;t able to provide pricing for individual line items or discounts.</scope>
+</GenAiPlugin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Authorizer_Approval_Quote</fullName>
+    <columns>Quote_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
+    <columns>MDL_Extended_List_Price_Summary__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Finalized</value>
+    </filters>
+    <label>Price Authorizer Approval</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

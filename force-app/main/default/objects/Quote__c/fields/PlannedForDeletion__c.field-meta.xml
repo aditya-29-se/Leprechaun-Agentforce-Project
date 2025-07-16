@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlannedForDeletion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SAPE-9133 : This Field will be used by the QuoteArchivingBatch job to identify the quotes that will be marked for deletion.</description>
+    <label>Planned For Deletion</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Status</description>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Authorized</fullName>
+                <default>false</default>
+                <label>Authorized</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Finalized</fullName>
+                <default>false</default>
+                <label>Finalized</label>
+            </value>
+            <value>
+                <fullName>Not Authorized</fullName>
+                <default>false</default>
+                <label>Not Authorized</label>
+            </value>
+            <value>
+                <fullName>Sleeping</fullName>
+                <default>false</default>
+                <label>Sleeping</label>
+            </value>
+            <value>
+                <fullName>Submitted for Authorization</fullName>
+                <default>false</default>
+                <label>Submitted for Authorization</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

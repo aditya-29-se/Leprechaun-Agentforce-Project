@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RebateAcknowledged__c</fullName>
+    <description>SAPE-2655,Modified the Checkbox Field to Formula Checkbox Field</description>
+    <formula>IF( NOT(ISNULL( RebateExpiration__c )) , True  , False)</formula>
+    <label>Rebate Order Acknowledged</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

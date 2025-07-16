@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Marks a Quote as Authorized and creates a Communication_Stream__c record. This will be executed when user put in a Note or when user confirms to Authorize without a Note. If Note is provided, use that Note value to pass to this Apex method. Otherwise pass a null value for the Note parameter.</description>
+    <invocationTarget>QuoteAuthorizationController</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Authorize Quote and Create Communication Stream</masterLabel>
+</GenAiFunction>

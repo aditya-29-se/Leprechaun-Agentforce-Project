@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quot_Line_Item_No__c</fullName>
+    <defaultValue>0000</defaultValue>
+    <description>This field stores the Quote Line item counts. Used to assign unique Item no value to Quote Line Item.</description>
+    <externalId>false</externalId>
+    <label>Quot Line Item No</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

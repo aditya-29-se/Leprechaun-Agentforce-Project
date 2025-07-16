@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When user mention about creating a new scenario agent needs to use this topic</description>
+    <developerName>Scenario_Creation</developerName>
+    <genAiFunctions>
+        <functionName>Scenario_selection</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Clone_Scenario1</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ask user the name of new scenario. And also agent needs to list out the existing scenarios to user with scenario Name__c then user needs to select one scenario to create a new scenario out of it.</description>
+        <developerName>instruction_askuserthe0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_askuserthe0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Clarify any ambiguous requests by asking follow-up questions.</description>
+        <developerName>instruction_clarifyany1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_clarifyany1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Confirm with the user that the created scenario meets their expectations before finalizing.</description>
+        <developerName>instruction_confirmwit2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmwit2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure that all required fields are completed before finalizing the scenario.</description>
+        <developerName>instruction_ensurethat3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ensurethat3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>explicitly directs the agent to prioritize displaying the custom field Name__c from PI_Scenario__c instead of the standard Name field when listing scenarios.</description>
+        <developerName>instruction_explicitly4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_explicitly4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>fetching and displaying the custom field Name__c from PI_Scenario__c when listing existing scenarios for user selection.</description>
+        <developerName>instruction_fetchingan5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_fetchingan5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Scenario Creation</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to create new scenario and scenario line child records according to the base scenario selected by user. This base scenario is used to clone and create a new scenario.</scope>
+</GenAiPlugin>

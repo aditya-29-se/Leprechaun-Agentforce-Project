@@ -1,0 +1,18 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "SPDRevLevelRecordItemFromFlow" : {
+      "title" : "SPDRevLevelRecordItemFromFlow",
+      "description" : "This will be a summary of SPD Rev Level Record. Display the below summary.\nPrevious Authorization Details at Rev No: spd_rev_num__c\n",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "SPD_REV_Level__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

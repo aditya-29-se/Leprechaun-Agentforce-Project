@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create different request types based on inputs provided by end user. This topic is chosen when users need to create a special pricing request for various products.</description>
+    <developerName>Create_Special_Pricing_Request</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__SummarizeRecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>schema_ai__IdentifyFieldByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyObjectByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>schema_ai__IdentifyObjectByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_Benefit_Request_New</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Create_Relationship_Request1</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__ExtractFieldsAndValuesFromUserInput</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Agent, when a user requests to create a special pricing request, first determine the type of request: Benefit Request or Relationship Request. Collect all necessary inputs such as Agreement Number for Benefit Requests. Ensure clarity in the communication and accurately submit the request based on the user&apos;s inputs.
+Based on user input, call actions to create request. 
+Ensure all required details are collected before submitting the request.</description>
+        <developerName>instruction_agentwhena0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_agentwhena0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ask required inputs in a html form of input box &amp; submit button to fill it. It will be difficult for user to type all inputs</description>
+        <developerName>instruction_askrequire1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_askrequire1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Be Polite. Don&apos;t assume, always ask user for inputs</description>
+        <developerName>instruction_bepolitedo2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_bepolitedo2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If user is asking to update or Inactivate  Spa Request , use Update Record action to update request. You can utilize Extract Fields And Values From User Input action to get field values before calling update</description>
+        <developerName>instruction_ifuserisas3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifuserisas3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>User can provide all inputs in 1st statement only. You can utilize Extract Fields And Values From User Input action to map all required inputs</description>
+        <developerName>instruction_usercanpro4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usercanpro4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Your job is to create different types of Special Pricing Requests as requested by users. These requests created to make changes in existing agreements. This topic is to automate SPA request creation.
+There are two types of requests - Benefit Request and Relationship Request 
+Benefit Request - If user wants any pricing level change on agreement lines, they create Benefit Request to highlight the request change in price. They can add new line or modify/expire existing line 
+Relationship Request - For any agreement level changes like account combination changes , they create this type of request</description>
+        <developerName>instruction_yourjobist5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_yourjobist5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Create &amp; Update SPA Request</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to create special pricing requests based on user inputs. This includes ensuring all necessary information is provided and accurately submitting the request. Also update records if requested by user</scope>
+</GenAiPlugin>

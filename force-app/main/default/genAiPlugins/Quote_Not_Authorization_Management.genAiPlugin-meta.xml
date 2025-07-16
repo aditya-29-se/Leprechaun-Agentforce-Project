@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Handles requests related to marking quotes as not authorized or recording user notes under quotes when authorization issues arise.</description>
+    <developerName>Quote_Not_Authorization_Management</developerName>
+    <genAiFunctions>
+        <functionName>Not_Auth_Quote</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Ensure the communication stream record accurately reflects the user&apos;s note.</description>
+        <developerName>instruction_ensurethec0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ensurethec0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Prompt the user to provide a specific note regarding the reason for marking the Quote as &apos;Not Authorized&apos;</description>
+        <developerName>instruction_prompttheu1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_prompttheu1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a user indicates a quote cannot be authorized, initiate the process to mark the quote as not authorized.</description>
+        <developerName>instruction_whenauseri2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenauseri2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quote Not Authorization Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>You are responsible for creating communication stream records with user-specified notes under quotes when user wants to not authorize a quote</scope>
+</GenAiPlugin>

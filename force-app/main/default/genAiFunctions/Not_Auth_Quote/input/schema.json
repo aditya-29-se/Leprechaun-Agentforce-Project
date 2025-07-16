@@ -1,0 +1,21 @@
+{
+  "required" : [ "Note", "QuoteId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Note" : {
+      "title" : "Note",
+      "description" : "The Note. Needs to be retrieved from user conversation",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "QuoteId" : {
+      "title" : "QuoteId",
+      "description" : "The ID of the Quote Record. this should be identified from the current record",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

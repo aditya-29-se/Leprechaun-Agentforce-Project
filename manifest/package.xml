@@ -30,11 +30,47 @@
     </types>
     <types>
         <members>*</members>
-        <name>Layout</name>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+      <members>*</members>
+      <name>GenAiPlugin</name>
+   </types>
+   <types>
+      <members>*</members>
+      <name>GenAiFunction</name>
+   </types>
+   <types>
+      <members>*</members>
+      <name>GenAiPromptTemplate</name>
+   </types>
+   <types>
+      <members>*</members>
+      <name>GenAiPlanner</name>
+   </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>permissionSet</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningTypeBundle</name>
     </types>-->
     <types>
         <members>*</members>
-        <name>layout</name>
+        <name>flow</name>
     </types>
     <version>64.0</version>
 </Package>

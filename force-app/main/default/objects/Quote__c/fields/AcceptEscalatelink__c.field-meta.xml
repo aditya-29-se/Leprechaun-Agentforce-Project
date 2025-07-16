@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AcceptEscalatelink__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;../apex/acceptCounter?Id=&quot; &amp; Id , &quot;Accept Counter&quot;, &quot;_top&quot;)&amp; BR() &amp; 
+HYPERLINK(&quot;../apex/EscalateCounter?Id=&quot; &amp; Id , &quot;Escalate&quot;, &quot;_top&quot;)</formula>
+    <label>Action</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

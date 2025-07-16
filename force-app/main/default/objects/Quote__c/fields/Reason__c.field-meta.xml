@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason__c</fullName>
+    <label>Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Z1</fullName>
+                <default>false</default>
+                <label>Backlog Cleanup</label>
+            </value>
+            <value>
+                <fullName>P1</fullName>
+                <default>false</default>
+                <label>BOM / Drawings Print</label>
+            </value>
+            <value>
+                <fullName>Z2</fullName>
+                <default>false</default>
+                <label>Carrier Issue</label>
+            </value>
+            <value>
+                <fullName>ZH</fullName>
+                <default>false</default>
+                <label>Customer Ordering Error</label>
+            </value>
+            <value>
+                <fullName>ZD</fullName>
+                <default>false</default>
+                <label>Customer Requested Change</label>
+            </value>
+            <value>
+                <fullName>Z3</fullName>
+                <default>false</default>
+                <label>Plant Engineering Error</label>
+            </value>
+            <value>
+                <fullName>ZV</fullName>
+                <default>false</default>
+                <label>Plant Inoperative Product</label>
+            </value>
+            <value>
+                <fullName>Z9</fullName>
+                <default>false</default>
+                <label>Plant Product Error</label>
+            </value>
+            <value>
+                <fullName>Z8</fullName>
+                <default>false</default>
+                <label>Plant Shipping Error</label>
+            </value>
+            <value>
+                <fullName>ZB</fullName>
+                <default>false</default>
+                <label>Product Availability</label>
+            </value>
+            <value>
+                <fullName>Z7</fullName>
+                <default>false</default>
+                <label>Project Management Error</label>
+            </value>
+            <value>
+                <fullName>Z6</fullName>
+                <default>false</default>
+                <label>Quotation Error</label>
+            </value>
+            <value>
+                <fullName>Z5</fullName>
+                <default>false</default>
+                <label>Sales Concession</label>
+            </value>
+            <value>
+                <fullName>Z4</fullName>
+                <default>false</default>
+                <label>Sales Error</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

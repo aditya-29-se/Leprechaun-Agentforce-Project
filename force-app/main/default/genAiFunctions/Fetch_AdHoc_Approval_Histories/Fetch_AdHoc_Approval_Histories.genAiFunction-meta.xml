@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action will get the Pending Adhoc Approval History records. This action will be executed when user ask agent to Authorize a Quote</description>
+    <invocationTarget>Fetch_AdHoc_Approval_Histories</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Fetch AdHoc Approval Histories</masterLabel>
+</GenAiFunction>

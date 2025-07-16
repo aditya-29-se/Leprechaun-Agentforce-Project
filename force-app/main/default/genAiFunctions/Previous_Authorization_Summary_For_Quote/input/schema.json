@@ -1,0 +1,31 @@
+{
+  "required" : [ "Input:SpdRev", "Input:QuoteId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:SpdRev" : {
+      "title" : "SpdRev",
+      "description" : "It will be taken from the end user input. If end user mentioned spd rev number, then take that value",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:QuoteId" : {
+      "title" : "QuoteId",
+      "description" : "this is an 18 digit Quote__c id. take it from the current record context or ask end user to provide",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Quote__c"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "outputLanguage" : {
+      "title" : "Prompt Operation output language",
+      "description" : "Select Prompt Operation output language",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

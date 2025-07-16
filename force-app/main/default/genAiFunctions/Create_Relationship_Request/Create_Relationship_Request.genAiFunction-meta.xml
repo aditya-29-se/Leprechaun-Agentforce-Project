@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this action to create Relationship Request only. Always ask for required inputs like Agreement Number and account names in a html form html form of input box &amp; submit button to fill it. It will be difficult for user to type all inputs
+Find account Id by running query by its name and pass them to apex method</description>
+    <invocationTarget>RelationshipRequestController</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>true</isConfirmationRequired>
+    <masterLabel>Create Relationship Request</masterLabel>
+</GenAiFunction>

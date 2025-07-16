@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>Adjust prices for customer quotations based on specific customer requirements. This topic is selected when a customer needs a tailored price adjustment for their quotation.</description>
+    <developerName>p_16jgL000000N2SX_Custom_Price_Adjustments</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If the customer requests a price adjustment, use EmployeeCopilot__LabelARecord to apply the necessary label for the adjustment.</description>
+        <developerName>instruction_0</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Custom Price Adjustments</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to only adjust prices based on customer-specific requirements. You aren&apos;t able to provide detailed pricing for standard quotations or line items without specific customer requests.</scope>
+</GenAiPlugin>
